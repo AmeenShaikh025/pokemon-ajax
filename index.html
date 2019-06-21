@@ -50,14 +50,14 @@
 
                 <form class="form-inline ml-auto">
                   <div class="md-form my-0">
-                    <input class="form-control" id="search-pokemon" type="text" placeholder="Search" aria-label="Search">
+                    <input class="form-control" id="search-pokemon" type="text" placeholder="Search for pokémon" aria-label="Search">
                   </div>
                   <!-- <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit">Search</button> -->
                 </form>
             
               </div>
             <!-- Collapsible content -->
-            <ul class="navbar-nav nav-flex-icons">
+            <!-- <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
                     <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
                 </li>
@@ -67,7 +67,7 @@
                 <li class="nav-item">
                     <a class="nav-link"><i class="fab fa-instagram"></i></a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 
@@ -76,30 +76,83 @@
 
 <!--Main Layout-->
 <main class="pokemon-list">
-    <div class="container" style="height:1300px;">
-        <div class="row mt-5 pt-5 pokemon-cards">
-            <!-- <div class="col-lg-3 col-md-4 mb-3">
-                <div class="card">
 
-                    <div class="view overlay">
-                      <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
-                      <a>
-                        <div class="mask rgba-white-slight"></div>
-                      </a>
-                    </div>
-                  
-                    <div class="card-body">
-                
-                      <h4 class="card-title">Card title</h4>
-                      <hr>
-                      <a href="javascript:void(0);" class="btn btn-outline-danger waves-effect btn-common">More</a>
+  <section class="home">
+      <div class="container" style="height:100%;">
+          <div class="row mt-5 pt-5">
+            <div class="col-lg-9 col-md-8">
+              <div class="row pokemon-cards">
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4">
+                <form>
+                    <label class="mdb-main-label text-danger" for="pokemon-types">Select type of pokemon</label>
+                    <select class="custom-select" id="pokemon-types">
+                      <option selected value="all">All</option>
+                      <option value="poison">Poison</option>
+                      <option value="fire">Fire</option>
+                      <option value="water">Water</option>
+                    </select>
+                  </form>
+            </div>
+              <!-- <div class="col-lg-3 col-md-4 mb-3">
+                  <div class="card">
+  
+                      <div class="view overlay">
+                        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg" alt="Card image cap">
+                        <a>
+                          <div class="mask rgba-white-slight"></div>
+                        </a>
+                      </div>
                     
-                    </div>
+                      <div class="card-body">
                   
-                </div>
-            </div> -->
+                        <h4 class="card-title">Card title</h4>
+                        <hr>
+                        <a href="javascript:void(0);" class="btn btn-outline-danger waves-effect btn-common">More</a>
+                      
+                      </div>
+                    
+                  </div>
+              </div> -->
+          </div>
+      </div>
+  </section>
+
+  <section class="loader">
+      <div class="container-fluid">
+          <div class="row loading-div">
+            <div class="col-12 d-flex justify-content-center">
+              <div class="spinner-grow text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-secondary" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-success" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-danger" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-warning" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-info" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-light" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+              <div class="spinner-grow text-dark" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+  </section>    
+
 </main>
 <!--Main Layout-->
 
